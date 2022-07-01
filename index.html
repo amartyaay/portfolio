@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Development tab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">projects</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Amartya Ayushi</h1>
+        <h2>Web Development / Flutter Dev / Competitive Programming</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/amartya.ayushi.77/" target="_blank"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/AyushiAmartya" target="_blank"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/amartyaay/" target="_blank"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://github.com/amartyaay" target="_blank"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://www.linkedin.com/in/amartya-ayushi/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Projects</h1>
+        <section>
+            <h2>Today In Tabs</h2>
+            <p>
+                A website that collects latest haeadlines from Newsdata.io and then proceeds on to show the a <i>positivity measure</i>, <i>sentiment analysis</i> and a short <i>summary</i> of the news using <u>textblob</u>, a Python library for processing textual data. <br> I was working with a team of 4 for development of this project.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Django</div>
+                <div><i class="fas fa-circle"></i>&nbsp;APIs</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <a  style="text-decoration:none" class="btn btn_one" href='https://github.com/amartyaay/today_in_tabs' target="_blank">GitHub</a>
+            <a style="text-decoration:none" href="https://today-in-tabs.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn_one">Website</a>
+        </section>
+        <section>
+            <h2>Instagram Clone</h2>
+            <p>
+               A <i><u>Flutter</u></i> application that aims to clone<i><a class="links_inside" href="https://instagram.com/amartyaay">Instagram</a></i>features using <i><u>Firebase</u></i> for <i>authentication</i> and <i>database</i>.
+               <br>
+               <b><i>Under Progress</i></b>
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Flutter</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Firebase</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Mobile Dev</div>
+            </div>
+            <a  style="text-decoration:none" class="btn btn_one" href='https://github.com/amartyaay/instagram_flutter' target="_blank">GitHub</a>
+            <a style="text-decoration:none" href="https://github.com/amartyaay/instagram_flutter" target="_blank" rel="noopener noreferrer" class="btn btn_one">Website</a>
+        </section>
+        <section>
+            <h2>Todo List</h2>
+            <p>
+                A simple todo list application made using <i>React</i> with <i>Redux</i> for state management. The uses <u><i>Local Storage</i></u> to let you be consistent with your todos.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                <div><i class="fas fa-circle"></i>&nbsp;LocalStorage</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Hooks</div>
+            </div>
+            <a  style="text-decoration:none" class="btn btn_one" href='https://github.com/amartyaay/todo-list' target="_blank">GitHub</a>
+            <a style="text-decoration:none" href="https://amartyaay.github.io/todo-list/" target="_blank" rel="noopener noreferrer" class="btn btn_one">Website</a>
+        </section>
+        <section>
+            <h2>Weather App</h2>
+            <p>
+                A website that lets you <i>search</i> for weather of particular location, but can also give you the current weather information of your <i>live location</i> using <i>navigator.geolocation</i> of JS using the API  provided by<a class="links_inside" href="https://openweathermap.org" target="_blank" style="text-decoration:none">openweathermap.org</a>.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;JSON</div>
+                <div><i class="fas fa-circle"></i>&nbsp;APIs</div>
+            </div>
+            <a  style="text-decoration:none" class="btn btn_one" href='https://github.com/amartyaay/weather_search' target="_blank">GitHub</a>
+            <a style="text-decoration:none" href="https://amartyaay.github.io/weather_search/" target="_blank" rel="noopener noreferrer" class="btn btn_one">Website</a>
+        </section>
+        <p>Take a look at my<a class="links_inside" href="https://github.com/amartyaay" target="_blank"><i class="fab fa-github"></i></a>for more..</p>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about me</h1>
+            <section>
+                <b>
+                    Hi there, I am Amartya Ayushi. I am currently a under graduate student at<a class="links_inside" href="https://www.bits-pilani.ac.in/" style="text-decoration:none"><b>Birla Institute of Technology and Sciences, Pilani, Hyderabad Campus,</b></a>pursuing <u>Master of Science in Chemistry</u> and <u>Bachelor of Engineering in Mechanical Engineering</u>.
+                </p>
+                <p>
+                </p>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Django</div>
+                <div><i class="fas fa-circle"></i>&nbsp;C++</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Flutter</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Firebase</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Heroku</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Git</div>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form method="post" action="mailto:amartyaayushi13gmail.com" enctype="text/plain">
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form>
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made on earth <br> <a href="https://amartyaay.github.io/portfolio/">Amartya</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
